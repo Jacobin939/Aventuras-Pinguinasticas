@@ -91,9 +91,9 @@ public class JogoGUI extends JFrame {
     public static void main(String[] args) {
         Missao missao = new Missao("olha para mim", "nada", null, null);
 
-        Jogador jogador = new Jogador("Antonio", -100, null);
+        Jogador jogador = new Jogador(-100, null);
         Recursos recursos = new Recursos(0,0,0,0);
-        Barco barco = new Barco(jogador.getNome(), jogador.getPontuacao(), jogador.getMissao_atual(), 0,0, recursos);
+        Barco barco = new Barco(jogador.getPontuacao(), jogador.getMissao_atual(), 0,0, recursos);
 
 
         SwingUtilities.invokeLater(() -> {

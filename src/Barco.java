@@ -32,8 +32,8 @@ public class Barco extends Jogador {
      * O resto dos parametros servem para construir o {@link Jogador}
      * @return o objeto {@link Barco}
      */
-    public Barco(String nome, int pontuacao, Missao missaoAtual, int posX, int posY, Recursos recursos) {
-        super(nome, pontuacao, missaoAtual);
+    public Barco(int pontuacao, Missao missaoAtual, int posX, int posY, Recursos recursos) {
+        super(pontuacao, missaoAtual);
         this.pos_x = posX;
         this.pos_y = posY;
         this.recursos = recursos;
